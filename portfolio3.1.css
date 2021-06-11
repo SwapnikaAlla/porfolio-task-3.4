@@ -1,0 +1,108 @@
+*{
+     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TOP SECTION CSS */
+
+ section.Projects{
+   background-image: url('./project-background.jpg');
+   background-size: cover;
+   height: 650px;
+}
+
+div.jects {
+    color:bisque;
+    text-align: center;
+    
+}
+
+div.jects h1{
+    font-size: 50px;
+    padding: 10px;
+}
+
+div.jects p.content{
+    color: paleturquoise;
+    font-size: 25px;
+}
+
+div.jects a.yo{
+    display: inline-block;
+    text-decoration: none;
+    background-color:bisque;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+div.jects a.yo:hover{
+    color:paleturquoise;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* MY PROJECTS */
+*{
+    margin: 0;
+    padding: 0;
+}
+section.my-project h2{
+    text-align: center;
+}
+section.my-project div.project-container div.image-idea,section.my-project div.project-container div.matter-ject{
+   float: left;
+}
+section.my-project div.project-container::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section.my-project div.project-container div.matter-ject{
+    width: 25%;
+    font-size: 35px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+section.my-project div.project-container div.image-idea{
+    width: 25%;
+
+}
+
+section.my-project div.project-container div.matter-ject{
+    width: 75%;
+    height: 300px;
+    color: peru;
+}
+
+@media( max-width:500px){
+    section.Projects{
+        width: 100vw;
+        height: 50vh;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+        
+    }
+    section.Projects div.jects{
+        padding: 0;
+        padding-top: 16vh;
+    }
+    section.my-project div.project-container div.matter-ject,section.my-project div.project-container div.image-idea{
+        float: none;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    section.my-project div.project-container div.image-idea img{
+        width: 100vw;
+
+    }
+    section.my-project div.project-container div.matter-ject{
+        height: 50vh;
+        font-size: 25px;
+    }
+}
+
